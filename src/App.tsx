@@ -4,6 +4,7 @@ import {
   Route,
   Link,
 } from "react-router-dom";
+import ClickUseRef from "./pages/ClickUseRef";
 import LoginUseRef from "./pages/LoginUseRef";
 import LoginUseState from "./pages/LoginUseState";
 import Main from "./pages/Main";
@@ -18,6 +19,7 @@ function App() {
         <Switch>
           <Route path="/login-use-state" exact component={LoginUseState} />
           <Route path="/login-use-ref" exact component={LoginUseRef} />
+          <Route path="/click-use-ref" exact component={ClickUseRef} />
           <Route path="/" component={Main} />
         </Switch>
       </div>

@@ -14,6 +14,9 @@ function Main() {
           <li>
             <Link to="login-use-ref">Login com useRef</Link>
           </li>
+          <li>
+            <Link to="click-use-ref">Click com useRef</Link>
+          </li>
         </ul>
       </div>
     </>
