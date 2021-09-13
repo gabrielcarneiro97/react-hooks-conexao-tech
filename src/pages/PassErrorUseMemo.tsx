@@ -13,7 +13,6 @@ function LoginUseState() {
   const loginRef = useRef<HTMLInputElement | null>(null);
   const [senha, setSenha] = useState('');
   const isValid = useMemo(() => senha.length === 0 || (senha.length > 8 && (hasLowerCase(senha) && hasUpperCase(senha))), [senha]);
-  console.log(isValid);
 
   const inputSetState = (
     setState : React.Dispatch<React.SetStateAction<string>>
