@@ -1,7 +1,9 @@
-import { useEffect, useRef } from 'react';
+import { useRef } from 'react';
 import useForceUpdate from '../hooks/useForceUpdate';
+import useLogRender from '../hooks/useLogRender';
 
 function ClickUseRef() {
+  useLogRender();
   const forceUpdate = useForceUpdate();
   const contador = useRef(0);
 
@@ -10,10 +12,6 @@ function ClickUseRef() {
     console.log('contador: ', contador.current);
     if (contador.current % 5 === 0) forceUpdate();
   }
-
-  useEffect(() => {
-    console.log('render');
-  });
 
   return (
     <div>

@@ -1,16 +1,14 @@
-import { useEffect, useState } from "react";
+import { useState } from 'react';
+import useLogRender from '../hooks/useLogRender';
 
 function LoginUseState() {
+  useLogRender();
   const [login, setLogin] = useState('');
   const [senha, setSenha] = useState('');
 
   const inputSetState = (
     setState : React.Dispatch<React.SetStateAction<string>>
   ) => (e : React.ChangeEvent<HTMLInputElement>) => setState(e.target.value);
-
-  useEffect(() => {
-    console.log('render');
-  });
 
   return (
     <>

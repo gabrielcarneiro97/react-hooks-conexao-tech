@@ -1,12 +1,10 @@
-import { useEffect, useRef } from "react";
+import { useRef } from 'react';
+import useLogRender from '../hooks/useLogRender';
 
 function LoginUseRef() {
+  useLogRender();
   const loginInput = useRef<HTMLInputElement | null>(null);
   const senhaInput = useRef<HTMLInputElement | null>(null);
-
-  useEffect(() => {
-    console.log('render');
-  });
 
   return (
     <>
